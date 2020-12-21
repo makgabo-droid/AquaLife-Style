@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+		<title>AquaLife Style Landing Page</title> 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+		<h1><span>AquaLife Style</span></h1>
+    	<section>
+			<div class="circle"></div>
+    		<header>
+    			<a href="#" class="logo"><img src="https://freepngimg.com/thumb/fish/3-blue-fish-png-image-thumb.png"></a>
+    			<ul>
+    				<li><a href="#">Home</a></li>
+    				<li><a href="#">Menu</a></li>
+    				<li><a href="#">What's New</a></li>
+    				<li><a href="contacts.html">Contact Us</a></li>
+    			</ul>
+			</header>
+			<div class="content">
+				<div class="textBox">
+					<h2>We bring the Outdoors Indoors<br>It's <span>AquaLife Style!</span></h2>
+					<p>We specialize in <b>Installation, Maintainance and Cleaning</b> of both fish tanks and ponds.
+					  With our high quality chemicals we aim to ensure that your fish are healthy can live a bit longer.
+					</p>
+					 <a href="#">Lear More</a>
+				</div>
+					<div class="imgBox">
+						<img src="https://freepngimg.com/thumb/aquarium/42655-6-aquarium-furniture-image-png-download-free-thumb.png" alt="fishtank">
+					</div>
+			</div>
+			<ul class="thumb">
+				<li><img src="https://freepngimg.com/thumb/tropical_fish/15-2-fish-png-14-thumb.png" alt="" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+				<li><img src="https://freepngimg.com/thumb/tropical_fish/14-2-fish-png-15-thumb.png" alt="yellow tang" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')"></li>
+				<li><img src="https://freepngimg.com/thumb/tropical_fish/11-2-fish-png-11-thumb.png" alt="Goldie" onclick="imgSlider('img3.png');changeCircleColor('#d75b1')"></li>
+			</ul>
+			<li>
+				<div class="icon">
+					<i class="fab fa-youtube"></i>
+				</div>
+				<div class="data">
+					<p><a href="https://www.youtube.com/user/mmathatoable/featured?disable_polymer=true">YouTube</a></p>
+				</div>
+			</li>
+		</section>  
+		<script type="text/javascript">
+		   function imgSlider(anything){
+			   document.querySelector('.Aqualife').src = anything;
+		   }
+
+		   function changeCircleColor(color){
+			   const circle = document.querySelector('.circle');
+			   circle.style.background = color;
+		   }
+		</script>
+		<a href="contacts.html">Contact Us</a>
+    </body>
+</html>
